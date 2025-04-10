@@ -16,7 +16,7 @@ body {
     font-size: 18px;
     line-height: 1.8;
     color: #2d2d2d;
-    background-color: #f7f7f7;
+    background-color: #F4F1EB;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -29,15 +29,17 @@ body {
 
 /* Cabeçalho */
 header {
-    background-image: url('/images/header.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/header.png');
     background-size: cover;
-    background-position: center;
+    background-position: center top;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white;
+    color: #FFFFFF;
     padding: 2.5rem 1rem;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+
 
 header h1 {
     font-size: 2.8rem;
@@ -49,7 +51,10 @@ header h1 {
     font-style: italic;
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
-    color: #d3d3d3;
+    color: #B88A44;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    
+      
 }
 
 /* Estilo do logotipo no cabeçalho */
@@ -60,7 +65,7 @@ header h1 {
     display: block;
     border-radius: 30%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    border: solid rgb(238, 238, 236) 2px 
+    border: solid #B88A44 2px 
 }
 
 /* Estilo do botão do menu hamburguer */
@@ -78,7 +83,7 @@ header h1 {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background-color: white;
+    background-color: #B88A44;
     width: 25px;
     height: 3px;
     display: block;
@@ -123,7 +128,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: #B88A44;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
@@ -131,7 +136,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #a3bffa;
+    color: #85683e;
 }
 
 /* Conteúdo principal */
@@ -320,7 +325,7 @@ ol li {
 /* Estilo da imagem introdutória na seção Cronologia */
 .cronologia-intro {
     width: 100%;
-    max-width: 300px;
+    max-width: 100%;
     height: auto;
     margin: 1rem auto;
     display: block;
@@ -434,8 +439,8 @@ ol li {
 /* Rodapé */
 footer {
     flex-shrink: 0;
-    background-color: #1a2b49;
-    color: white;
+    background-color:#0F1A2B;
+    color: #85683e;
     text-align: center;
     padding: 1.5rem;
     width: 100%;
@@ -472,7 +477,7 @@ footer {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #1a2b49;
+        background-color:#0F1A2B;
         padding: 1rem 0;
     }
 
@@ -521,7 +526,7 @@ footer {
     }
 
     .cronologia-intro {
-        max-width: 250px;
+        max-width: 100%;
     }
 
     .timeline::before {
